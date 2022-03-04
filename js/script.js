@@ -37,3 +37,17 @@ window.onscroll = () => {
     ShoppingCart.classList.remove('active');
     LoginCart.classist.remove('active');
 }
+
+const txtAnim = document.querySelector('h1');
+new Typewriter(txtAnim, {
+        deleteSpeed: 20
+    })
+    .changeDelay(20)
+    .typeString('<span style="color :#3D3635">Welcome</span>')
+    .pauseFor(3000)
+    .deleteChars(20)
+    .changeDelay(20)
+    .typeString('<span style="color :#3D3635">to so-shop</span>')
+    .pauseFor(3000)
+    .deleteChars(20)
+    .start()
